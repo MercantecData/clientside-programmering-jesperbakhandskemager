@@ -1,7 +1,19 @@
+html {
+    background-color: #181a1b !important;
+}
+html, body, input, textarea, select, button {
+    background-color: #181a1b;
+    border-color: #736b5e;
+    color: #e8e6e3;
+}
+
+a {
+    color: #3391ff;
+}
 body
 {
     text-align: center;
-    border: 10px solid green;
+    border: 10px solid #00D900;
 
 }
 h1
