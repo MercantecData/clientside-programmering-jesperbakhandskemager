@@ -7,35 +7,53 @@
     <title> Portfolio</title>
 </head>
 <body>
-   <!-- <button id="changeTheme" type="button"
-onclick="document.getElementById('sticky').style.color = 'white'">
-Click Me!</button>-->
+   
     <h1 id="sticky">Jesper Handskemager's Portfolio</h1>
 
     <p>
-    <table>
+    <table class="center">
         <tr>
             <th>
-            <h2>Hotel Management</h2>
-            <img src="screenshot.png#sh256=e7f689d731f211a60a1fc81176dddc013004cf39accef41f3245bc20b9b56e42" alt="Hotel Management" id="small">
-            <p id="desc">A Program that manages bookings in a hotel and save the content to a file!</p>
+                <h2>Library Management</h2>
+                <a href="https://github.com/MercantecData/oop-opgave-2-jesperbakhandskemager"><img src="LibraryManagement.png#sha256=81d3920327ae3cb446f23790b1f736f2fdf29025ec599c578009305e0cb1e430" alt="Library Management" id="small"></a>
             </th>
             <th>
-                <h2>Library Management</h2>
-                <img src="LibraryManagement.png#sha256=81d3920327ae3cb446f23790b1f736f2fdf29025ec599c578009305e0cb1e430" alt="Library Management" id="small">
+                <h2>Hotel Management</h2>
+            <a href="https://git.handskemager.xyz/jesperbak/HotelManagement"><img src="screenshot.png#sh256=e7f689d731f211a60a1fc81176dddc013004cf39accef41f3245bc20b9b56e42" alt="Hotel Management" id="small"></a>
+           <!---- <p>A Program that manages bookings in a hotel and save the content to a file!</p>-->
+               
             </th> 
             <th>
                 <h2>netplan-tui</h2>
-                <img src="netplan-tui.png#sha256=716393cfc5ebf0d4103442063c6bc5411f612c5addab71369adf8cf0bc38d174" alt="Netplan TUI" id="small">
+                <a href="https://git.handskemager.xyz/jesperbak/Netplan-tui"><img src="netplan-tui.png#sha256=716393cfc5ebf0d4103442063c6bc5411f612c5addab71369adf8cf0bc38d174" alt="Netplan TUI" id="small"></a>
             </th>
           </tr>
-        
-        
+          <tr>
+              <th>
+                <h2>Alpine Post Install</h2>
+                <a href="https://git.handskemager.xyz/jesperbak/Alpine-Post-Install-Nginx"><img src="AlpineInstall.png#sha256=a61e2eb1613b47f7f85a39265b1189246360eff05a1d43c4ff9c5f2929dedb19" alt="Alpine Post Install" id="small"></a>
+              </th>
+              <th>
+                <h2>Basic Calc</h2>
+                <a href="https://git.handskemager.xyz/jesperbak/Basic-Calc"><img src="BasicCalc.png#sha256=bf26852490cfea0d1c8bdde64a3e020098c99bdeab3a6502ce79f168b55c7dc3" alt="Basic Calc" id="small"></a>
+              </th>
+              
+              <th>
+                  <h2>My Website</h2>
+                <a href="https://www.handskemager.xyz"><img src="website.png#sha256=e1b0c60891663ff0ebea4184275cfb5487191af91eac627210c9eb4b1c70cb0f" alt="Basic Calc" id="small"></a>
+
+              </th>
+          </tr>
 </table>
-    <ul>
-        <li><a href="https://github.com/jesperbakhandskemager/HotelManagement">Hotel Management</a></li>
-        <p>
-        <li><a href="https://github.com/MercantecData/oop-opgave-2-jesperbakhandskemager">Library lenting System</a></li>
-    </ul>
+
+<button onclick="changeTheme()">Toggle dark mode</button>
+
+<script>
+function changeTheme() {
+   var body = document.body;
+   body.classList.toggle("light-mode");
+}
+</script>
+<p></p>
 </body>
 </html>
